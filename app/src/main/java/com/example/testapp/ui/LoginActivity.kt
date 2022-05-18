@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
         service = ApiClient.createService(ApiService::class.java)
         btn_submit.setOnClickListener {
             progress.visibility=View.VISIBLE
-            btn_submit.isClickable=false
+
             if (user_login.text.isEmpty()) {
                 user_login.requestFocus()
                 progress.visibility=View.GONE
